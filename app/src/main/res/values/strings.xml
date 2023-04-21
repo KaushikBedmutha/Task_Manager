@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">TaskManager</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="password_r">Repeat Password</string>
+    <string name="task_manager">Task Manager</string>
+    <string name="there_is_not_any_task">There is not any task.</string>
+    <string name="title">Title</string>
+    <string name="create">Create</string>
+    <string name="description">Description</string>
+    <string name="cancel_add_item">Nothing Added</string>
+    <string name="successfully_added"> Successfully Added.</string>
+    <string name="successfully_edited"> Successfully Edited.</string>
+    <string name="successfully_deleted"> Successfully Deleted.</string>
+    <string name="login_successfully"> Login Successfully.</string>
+    <string name="add_task">Add Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="to_do">To Do</string>
+    <string name="doing">Doing</string>
+    <string name="done">Done</string>
+    <string name="logout">logout</string>
+    <string name="search">search</string>
+    <string name="search_point">search ...</string>
+    <string name="share">Share</string>
+    <string name="share_template">
+        %1$s !\nYour Task With Title %2$s : \n%3$s\nHas Been Created In  %4$s
+    </string>
+    <string name="change_pic">Change Image</string>
+    <string name="set_image">Set Image</string>
+    <string name="is_admin">Is Admin</string>
+    <string name="users">Users</string>
+    <string name="back">Back</string>
+
+</resources>

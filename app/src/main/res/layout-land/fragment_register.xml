@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerFragment_mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.RegisterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="194dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/register_side_logo" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerFragment_textInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:hint="@string/username"
+                android:textColorHint="@color/task_app_white"
+                app:boxStrokeColor="@color/task_app_red">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/registerFragment_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textImeMultiLine"
+                    android:textColor="@color/task_app_white"
+                    android:textSize="10sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerFragment_textInputLayout2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:hint="@string/password"
+                android:textColorHint="@color/task_app_white"
+                app:boxStrokeColor="@color/task_app_red">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/registerFragment_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    android:textColor="@color/task_app_white"
+                    android:textSize="10sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/registerFragment_textInputLayout3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:hint="@string/password_r"
+                android:textColorHint="@color/task_app_white"
+                app:boxStrokeColor="@color/task_app_red">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/registerFragment_passwordR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    android:textColor="@color/task_app_white"
+                    android:textSize="10sp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/registerFragment_isAdmin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/is_admin"
+                android:paddingLeft="24dp"
+                android:theme="@style/AppCheckBox" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/registerFragment_registerBtn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="15dp"
+                android:text="@string/register"
+                android:textColor="@color/task_app_darkest"
+                android:textSize="10sp"
+                app:backgroundTint="@color/task_app_yellow" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

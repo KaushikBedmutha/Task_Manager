@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/loginFragment_mainLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".Controller.LoginFragment">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/loginFragment_imageView"
+            android:layout_width="263dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/task_logo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginFragment_textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:hint="@string/username"
+            android:textColorHint="@color/task_app_white"
+            app:boxStrokeColor="@color/task_app_red">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginFragment_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textImeMultiLine"
+                android:textColor="@color/task_app_white"
+                android:textSize="14dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginFragment_textInputLayout2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/password"
+            android:textColorHint="@color/task_app_white"
+            app:boxStrokeColor="@color/task_app_red">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/loginFragment_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:textColor="@color/task_app_white"
+                android:textSize="14dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginFragment_loginBtn"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:text="@string/login"
+            android:textColor="@color/task_app_darkest"
+            app:backgroundTint="@color/task_app_yellow" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginFragment_registerBtn"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:text="@string/register"
+            android:textColor="@color/task_app_darkest"
+            app:backgroundTint="@color/task_app_yellow" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+</LinearLayout>
